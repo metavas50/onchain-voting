@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnChain Voting Platform</title>
+    <!-- Include Web3.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.7.3/dist/web3.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>OnChain Voting Platform</h1>
+        <button id="connect-wallet" onclick="connectWallet()">Connect Wallet</button>
+    </header>
+    
+    <section id="poll-creation">
+        <h2>Create a New Poll</h2>
+        <input type="text" id="poll-question" placeholder="Enter poll question">
+        <input type="text" id="poll-option-1" placeholder="Option 1">
+        <input type="text" id="poll-option-2" placeholder="Option 2">
+        <button id="create-poll">Create Poll</button>
+    </section>
+
+    <section id="voting-section">
+        <h2>Vote on Poll</h2>
+        <p id="poll-question-display"></p>
+        <button class="vote-option" data-option="1">Vote Option 1</button>
+        <button class="vote-option" data-option="2">Vote Option 2</button>
+    </section>
+
+    <section id="results">
+        <h2>Live Results</h2>
+        <p id="result-display">Total Votes: 0</p>
+    </section>
+
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
